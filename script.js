@@ -13,3 +13,9 @@ $(function checkButton() {
 		$(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked')
 	})
 });
+
+$(function deleteButton() {
+	$('ul').on('click', '.shopping-item-delete', function() {
+		$(this).closest('li').remove();
+	})
+})
